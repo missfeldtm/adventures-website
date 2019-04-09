@@ -22,7 +22,10 @@ body p {
 
 /* main header*/
 #hero {
-  background: lightblue;
+  background: url("images/img5.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
   color: white;
   width: 100%;
   position: relative;
@@ -37,7 +40,11 @@ body p {
 }
 
 #about {
-  background: #fff;
+  background: url("images/img3.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 40%;
+  color: #fff;
   margin-top: -12%;
   position: relative;
   z-index: 75;
@@ -46,16 +53,30 @@ body p {
   clip-path: polygon(52% 0, 100% 0, 100% 54%, 0 100%, 0 0);
 }
 
+#about:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 120%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.8);
+}
+
 #about .center {
   margin-top: 20%;
 }
 
 #facts {
+  background: url("images/img5.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
   position: relative;
   z-index: 50;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 63%);
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 63%);
-  background: #333;
   color: #fff;
   height: 1000px;
   margin-top: -24%;
@@ -66,7 +87,10 @@ body p {
 }
 
 #people {
-  background: #999;
+  background: url("images/img3.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 20%;
   height: 1000px;
   position: relative;
   z-index: 25;
@@ -75,17 +99,31 @@ body p {
   margin-top: -30%;
 }
 
+#people:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 120%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.8);
+}
+
 #people .center {
   margin-top: 35%;
 }
 
 #news {
+  background: url("images/img5.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
   position: relative;
   z-index: 20;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 97%, 0 85%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 97%, 0 85%);
   height: 500px;
-  background: #fff;
   height: 800px;
   margin-top: -15%;
 }
